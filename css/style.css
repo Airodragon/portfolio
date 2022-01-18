@@ -313,14 +313,6 @@
                         background-size: contain;
                         background-position-y: bottom;
                     }
-                    @media screen and (min-width: 801px){
-                      #contact .contact-links {
-                            background-image: url(../img/moving_contact.gif);
-                            background-repeat: no-repeat;
-
-                        }
-                    
-                    }
                     #contact .contact-form-wrapper {
                         border: 0.1em solid black;
                         background-color: #ffffff8f;
@@ -350,6 +342,8 @@
                     
                     #contact h2 {
                         font-family: 'Arimo', sans-serif;
+                        position: relative;
+                        top: 50%;
                         color: #fff;
                         font-size: clamp(30px, 6vw, 60px);
                         letter-spacing: 2px;
