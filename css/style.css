@@ -471,3 +471,16 @@
                     .submit-btn:hover{
                         background-color: #ca270a;
                     }
+                    #up-arrow{
+                        background: none;
+                        border: none;
+                        /* display: absolute; */
+                        position: fixed;
+                        top:90%;
+                        left:95%;
+                        z-index:20;
+                    }
+                    #up-arrow i{
+                        color: #fd917e;
+                        font-size: 32px;
+                    }
