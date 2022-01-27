@@ -484,3 +484,27 @@
                         color: #fd917e;
                         font-size: 32px;
                     }
+                    /* //SCROLLBAR */
+                    /* width */
+                        ::-webkit-scrollbar {
+                            width: 10px;
+                        }
+                
+                    /* Track */
+                        ::-webkit-scrollbar-track {
+                        /* box-shadow: inset 0 0 5px grey;  */
+                        /* border-radius: 10px; */
+                    }
+                    
+                    /* Handle */
+                    ::-webkit-scrollbar-thumb {
+                        background: linear-gradient(var(--first-color-alt), grey); 
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                    }
+                    
+                    /* Handle on hover */
+                    ::-webkit-scrollbar-thumb:hover {
+                        background: linear-gradient(var(--first-color-alt), grey); 
+
+                    }
