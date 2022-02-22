@@ -18,9 +18,9 @@ var
 
 chatterTL = new TimelineMax({paused: true, repeat: -1, yoyo: true});
 chatterTL
-	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], .1, {morphSVG: mouthShape4}, "0")
+	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], 0.1, {morphSVG: mouthShape4}, "0")
 	//.to('#armR', .1, {x: 2, ease: Linear.easeNone}, "0")
-	.to('#chin', .1, {y: 1.5}, "0")
+	.to('#chin', 0.1, {y: 1.5}, "0")
 ;
 
 yetiTL = new TimelineMax({paused: true, repeat: -1, repeatDelay: 0, delay: 0});
@@ -29,12 +29,12 @@ yetiTL
 		chatterTL.play();	
 	}, "0")
 	
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "2.5")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "2.575")
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "2.65")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "2.725")
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "2.8")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "2.875")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "2.5")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "2.575")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "2.65")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "2.725")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "2.8")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "2.875")
 
 	.addCallback(goLight, "3.2")
 	.addCallback(goDark, "3.3")
@@ -42,13 +42,13 @@ yetiTL
 
 	.addCallback(function() {
 		chatterTL.pause();
-		TweenMax.to(['#mouthBG', '#mouthPath', '#mouthOutline'], .1, {morphSVG: mouthShape1}, "0");
+		TweenMax.to(['#mouthBG', '#mouthPath', '#mouthOutline'], 0.1, {morphSVG: mouthShape1}, "0");
 	}, "3.2")
 
-	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], .25, {morphSVG: mouthShape2}, "5")
-	.to('#tooth1', .1, {y: -5}, "5")
-	.to('#armR', .5, {x: 10, y: 30, rotation: 10, transformOrigin: "bottom center", ease: Quad.easeOut}, "4")
-	.to(['#eyeL', '#eyeR'], .25, {scaleX: 1.4, scaleY: 1.4, transformOrigin: "center center"}, "5")
+	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], 0.25, {morphSVG: mouthShape2}, "5")
+	.to('#tooth1', 0.1, {y: -5}, "5")
+	.to('#armR', 0.5, {x: 10, y: 30, rotation: 10, transformOrigin: "bottom center", ease: Quad.easeOut}, "4")
+	.to(['#eyeL', '#eyeR'], 0.25, {scaleX: 1.4, scaleY: 1.4, transformOrigin: "center center"}, "5")
 
 	.addCallback(goDark, "8")
 	.addCallback(goLight, "8.1")
@@ -56,20 +56,20 @@ yetiTL
 	.addCallback(goLight, "8.4")
 	.addCallback(goDark, "8.6")
 
-	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], .25, {morphSVG: mouthShape1}, "9")
-	.to('#tooth1', .1, {y: 0}, "9")
-	.to('#armR', .5, {x: 0, y: 0, rotation: 0, transformOrigin: "bottom center", ease: Quad.easeOut}, "9")
-	.to(['#eyeL', '#eyeR'], .25, {scaleX: 1, scaleY: 1, transformOrigin: "center center"}, "9")
+	.to(['#mouthBG', '#mouthPath', '#mouthOutline'], 0.25, {morphSVG: mouthShape1}, "9")
+	.to('#tooth1', 0.1, {y: 0}, "9")
+	.to('#armR', 0.5, {x: 0, y: 0, rotation: 0, transformOrigin: "bottom center", ease: Quad.easeOut}, "9")
+	.to(['#eyeL', '#eyeR'], 0.25, {scaleX: 1, scaleY: 1, transformOrigin: "center center"}, "9")
 	.addCallback(function() {
 		chatterTL.play();
 	}, "9.25")
 
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "11.5")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "11.575")
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "11.65")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "11.725")
-	.to(['#armL', '#flashlightFront'], .075, {x: 7}, "11.8")
-	.to(['#armL', '#flashlightFront'], .075, {x: 0}, "11.875")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "11.5")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "11.575")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "11.65")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "11.725")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 7}, "11.8")
+	.to(['#armL', '#flashlightFront'], 0.075, {x: 0}, "11.875")
 
 ;
 
@@ -78,7 +78,7 @@ function goDark() {
 	
 	TweenMax.set('.lettersSide', {fill: lettersSideDark, stroke: lettersStrokeDark});
 	TweenMax.set('.lettersFront', {fill: lettersFrontDark, stroke: lettersStrokeDark});
-	TweenMax.set('#lettersShadow', {opacity: .05});
+	TweenMax.set('#lettersShadow', {opacity: 0.05});
 	
 	TweenMax.set('.hlFur', {fill: furDarkColor});
 	TweenMax.set('.hlSkin', {fill: skinDarkColor});
@@ -89,7 +89,7 @@ function goLight() {
 	
 	TweenMax.set('.lettersSide', {fill: lettersSideLight, stroke: lettersStrokeLight});
 	TweenMax.set('.lettersFront', {fill: lettersFrontLight, stroke: lettersStrokeLight});
-	TweenMax.set('#lettersShadow', {opacity: .2});
+	TweenMax.set('#lettersShadow', {opacity: 0.2});
 	
 	TweenMax.set('.hlFur', {fill: furLightColor});
 	TweenMax.set('.hlSkin', {fill: skinLightColor});
