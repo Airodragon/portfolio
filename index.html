@@ -31,13 +31,14 @@
             border: 1px solid red;
         }
     </style> -->
-
-
     <!-- #ICONSCOUT UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
+    <!-- <div class="alien"> -->
+    <img src="./img/alien.gif" alt="" class="img-thumbnail alien-gif" width="23px" height="24px">
+    <!-- </div> -->
     <!-- HEADER PART -->
     <nav class="navbar navbar-expand-md navbar-light bg-light" id="top-heading-post">
         <div class="container-fluid">
@@ -178,7 +179,7 @@
             </div>
         </section>
 
-        <a id="up-arrow" href="#top-heading-post"><i class="fa fa-arrow-circle-o-up"></i></a>
+        <a id="up-arrow" href="#top-heading-post"><img src="./img/ship-pause.jpg" alt="" class="up-ship"></a>
         <!-- ABOUT US SECTION -->
         <section id="about" class="pt-3">
             <div class="about-me mt-4" id="about-me">
@@ -485,34 +486,37 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="profile-card-4 text-center"><img
-                                src="./img/possessed-photography-jIBMSMs4_kA-unsplash.jpg"
-                                class="img img-responsive" >
+                                src="./img/possessed-photography-jIBMSMs4_kA-unsplash.jpg" class="img img-responsive">
                             <div class="profile-content">
                                 <div class="profile-description">
                                     <div class=" fs-5 text-danger">Game automation
                                         <p>A python project</p>
                                     </div>
                                     I have made a hand recognition system for playing Hill
-                                    Climbing, it uses mediapipe and cv2.</div>
+                                    Climbing, it uses mediapipe and cv2.
+                                </div>
                                 <div class="profile-buttons">
-                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i class="fa fa-github"></i> Github</a>
+                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i
+                                            class="fa fa-github"></i> Github</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img
-                                src="./img/jira-projects.png"
-                                class="img img-responsive" >
+                        <div class="profile-card-4 text-center"><img src="./img/jira-projects.png"
+                                class="img img-responsive">
                             <div class="profile-content">
                                 <div class="profile-description">
                                     <div class=" fs-5 text-danger">Sticky Tickets
                                         <p>A DOM project</p>
                                     </div>
-                                    I have made a Sticky Ticket manager that use local storage to store tickets and have different priority colors.</div>
+                                    I have made a Sticky Ticket manager that use local storage to store tickets and have
+                                    different priority colors.
+                                </div>
                                 <div class="profile-buttons">
-                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i class="fa fa-github"></i> Github</a>
+                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i
+                                            class="fa fa-github"></i> Github</a>
                                 </div>
                             </div>
                         </div>
@@ -520,23 +524,25 @@
 
 
                     <div class="col-md-4">
-                        <div class="profile-card-4 text-center"><img
-                                src="./img/excel-clone.png"
-                                class="img img-responsive" >
+                        <div class="profile-card-4 text-center"><img src="./img/excel-clone.png"
+                                class="img img-responsive">
                             <div class="profile-content">
                                 <div class="profile-description">
                                     <div class=" fs-5 text-danger">Excel Clone
                                         <p>A DOM project</p>
                                     </div>
-                                    I have made a Excel clone having most of the features of the microsoft excel. We can download upload the files also..</div>
+                                    I have made a Excel clone having most of the features of the microsoft excel. We can
+                                    download upload the files also..
+                                </div>
                                 <div class="profile-buttons">
-                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i class="fa fa-github"></i> Github</a>
+                                    <a href="./PROJECTS/error404.html" class="btn btn-outline-info btn-block"> <i
+                                            class="fa fa-github"></i> Github</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-               </div>
+                </div>
             </div>
         </section>
 
@@ -587,7 +593,7 @@
         </section>
     </main>
 
-    
+
     <footer class="new_footer_area bg_color">
         <div class="new_footer_top">
             <div class="container">
@@ -642,7 +648,7 @@
                         </div>
                     </div>
                 </div> -->
-            
+
             </div>
             <div class="footer_bg mb-lg-5">
                 <div class="footer_bg_one"></div>
@@ -656,7 +662,8 @@
                         <p class="mb-0 f_400 text-center">© Airodragon 2022 All rights reserved.</p>
                     </div>
                     <div class="col-lg-6 col-sm-5 text-right">
-                        <p class="text-center">Made by <a href="https://www.instagram.com/mihir_19_19/">Airodragon</a></p>
+                        <p class="text-center">Made by <a href="https://www.instagram.com/mihir_19_19/">Airodragon</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -682,10 +689,19 @@
 
     <!-- MAIN JS -->
     <script src="./js/main.js"></script>
-    
+
     <!-- FONTAWESOME -->
     <script src="https://use.fontawesome.com/a820f4c3f7.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+        let ship = document.querySelector(".up-ship");
+        ship.addEventListener("mouseover",(e)=>{
+            ship.setAttribute("src","./img/spaceship.gif");
+        })
+        ship.addEventListener("mouseout",(e)=>{
+            ship.setAttribute("src","./img/ship-pause.jpg");
+        })
+    </script>
     <script>
         var xValues = ["Frontend Development", "JavaScript", "Python", "C", "Competitive Programming", "jQuery", "UI/UX", "Java", "Communication", "Teaching", "Leadership"];
         var yValues = [90, 70, 95, 80, 60, 70, 80, 75, 85, 90, 85];
